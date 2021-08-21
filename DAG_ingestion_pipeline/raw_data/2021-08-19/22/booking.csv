@@ -1,0 +1,4 @@
+client_id,booking_date,room_type,hotel_id,booking_cost,currency
+2,2021-08-19T22:00:00,standard_1_bed,1,2910.0,GBP
+4,2021-08-19T22:00:00,standard_1_bed,1,2910.0,GBP
+5,2021-08-19T22:00:00,standard_1_bed,4,2910.0,EUR
