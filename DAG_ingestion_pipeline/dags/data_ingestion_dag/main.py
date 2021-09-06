@@ -105,7 +105,7 @@ ingestion_dag = DAG(
     'booking_ingestion',
     default_args=default_args,
     description='Aggregates booking records for data analysis',
-    schedule_interval=timedelta(days=1),
+    schedule_interval=timedelta(hours=1),
     catchup=False,
     user_defined_macros={'date_to_millis': execution_date_to_millis}
 )
