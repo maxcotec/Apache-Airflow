@@ -1,0 +1,12 @@
+global:
+  scrape_interval:     5s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: airflow
+    scheme: http
+    metrics_path: metrics
+    static_configs:
+      - targets: ['host.docker.internal:9102']
+        labels:
+          airflow_id: 'airflow'
